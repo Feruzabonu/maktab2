@@ -1,0 +1,40 @@
+.navbarDiv{
+    background-color: rgba(255,255,255,0.15);
+    position: absolute;
+    top: 15%;
+    width: 96%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar ul{
+    text-align: left;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: left;
+    color: #F3F8F9;
+    font-weight: 650;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+}
+.navbar ul li:hover{
+  color: #1EB2A6;
+}
+.rightNavbar{
+    background-color: #1EB2A6;
+    color: #F3F8F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-weight: 700;
+}
+ @media screen and (max-width:700px) {
+     .navbarDiv{
+         display: none;
+     }
+ }
