@@ -28,7 +28,7 @@
     margin-left: 2%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center !important;
     justify-content: space-between;
 }
 .navbar ul{
@@ -36,8 +36,9 @@
 }
 .navbar ul li{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     text-align: left;
+    margin-top: 10px;
     color: #F3F8F9;
     font-weight: 650;
     transition: all 0.3s;

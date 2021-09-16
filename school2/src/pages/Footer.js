@@ -14,10 +14,6 @@ export default class Footer extends Component {
     render() {
         return (
             <div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <div className={styles.footer}>
                      <Container>
                          <Row>
