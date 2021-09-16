@@ -47,6 +47,12 @@
 .navbar ul li:hover{
   color: #1EB2A6;
 }
+.navLink{
+    transition:  all 0.3s !important;
+}
+.navLink:hover{
+    color: #1EB2A6 !important;
+  }
 .rightNavbar{
     background-color: #1EB2A6;
     color: #F3F8F9;
