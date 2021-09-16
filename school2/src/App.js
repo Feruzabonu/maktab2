@@ -1,7 +1,8 @@
-import Navbar from './Navbar'
+import Navbar from './pages/Navbar'
 import './App.css';
-import Boshsahifa from './Boshsahifa';
-import Maktabhayoti from './Maktabhayoti';
+import Boshsahifa from './pages/Boshsahifa';
+import Maktabhayoti from './pages/Maktabhayoti';
+import Footer from './pages/Footer';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/maktabhayoti">
         <Navbar/>
          <Maktabhayoti/>
+         <Footer/>
       </Route>
       </Switch>
       </BrowserRouter>
