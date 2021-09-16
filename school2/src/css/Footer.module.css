@@ -1,0 +1,32 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+}
+.one h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Roboto",Arial,sans-serif;
+    margin-bottom: -5px;
+}
+.social_media{
+    width: 100%;
+    
+}
+.social_media li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1EB2A6;
+}
+.social_media a{
+    color: #fff;
+}
+.social_media div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
