@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styles from './navbar.module.css'
+import {BrowserRouter, Link} from 'react-router-dom'
 import {MenuOutlined} from '@ant-design/icons'
 import {BsClock} from 'react-icons/bs'
 import {FiPhone} from 'react-icons/fi'
@@ -14,6 +15,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <div>
+                <BrowserRouter>
                 <div className={styles.top}>
                     <div className={styles.name}>
                         <h1 style={{color:'white'}}>258-maktab</h1>
@@ -53,12 +55,12 @@ export default class Navbar extends Component {
                 <div className={styles.navbarDiv}>                    
                     <div className={styles.navbar}>
                         <ul style={{listStyleType:'none'}}>
-                            <li>Bosh sahifa</li>
-                            <li>Maktab hayoti</li>
-                            <li>Qabul</li>
-                            <li>Yangiliklar</li>
-                            <li>Maktab ma'muriyati</li>
-                            <li>Maktab a'lochilari</li>
+                            <li><Link className={styles.navLink} style={{textDecoration:'none',color:'white'}} to="/home">Bosh sahifa</Link></li>
+                            <li><Link className={styles.navLink} style={{textDecoration:'none',color:'white'}} to="/maktabhayoti">Maktab hayoti</Link></li>
+                            <li><Link className={styles.navLink} style={{textDecoration:'none',color:'white'}} to="/qabul">Qabul</Link></li>
+                            <li><Link className={styles.navLink} style={{textDecoration:'none',color:'white'}} to="/yangiliklar">Yangiliklar</Link></li>
+                            <li><Link className={styles.navLink} style={{textDecoration:'none',color:'white'}} to="/maktabmamuriyati">Maktab ma'muriyati</Link></li>
+                            <li><Link className={styles.navLink} style={{textDecoration:'none',color:'white'}} to="/maktabalochilari">Maktab a'lochilari</Link></li>
                         </ul>
                     </div>
                     <div className={styles.rightNavbar}>
@@ -85,6 +87,7 @@ export default class Navbar extends Component {
                         </ul>
                     </div>
                 </div>
+                </BrowserRouter>
             </div>
         )
     }
