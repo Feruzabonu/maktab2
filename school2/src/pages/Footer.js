@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import styles from '../css/Footer.module.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 import { CgFacebook } from 'react-icons/cg';
+import { RiTwitterFill } from 'react-icons/ri';
+import { GrLinkNext } from 'react-icons/gr';
 
 export default class Footer extends Component {
     render() {
@@ -22,7 +24,7 @@ export default class Footer extends Component {
                                     <p>Ixtisoslashtirilgan xususiy maktab</p>
                                     <p>Sifatli bilim va yuqori natijalarga bizning maktab bilan erishishingiz mumkin!</p>
                                     <ul className={styles.social_media}>
-                                        <li><a href='#'><FaTwitter/></a></li>
+                                        <li><a href='#'><RiTwitterFill/></a></li>
                                         <li><a href='#'><CgFacebook/></a></li>
                                         <li><a href='#'><FaInstagram/></a></li>
                                     </ul>
@@ -30,7 +32,10 @@ export default class Footer extends Component {
                              </Col>
                              <Col xs={12} sm={12} md={6} lg={2}>
                                  <div className={styles.two}>
-
+                                     <h2>Sahifalar</h2>
+                                     <ul className={styles.pages}>
+                                        <li><a href='#'><GrLinkNext/></a></li>
+                                     </ul>
                                  </div>
                              </Col>
                              <Col xs={12} sm={12} md={6} lg={2}>
