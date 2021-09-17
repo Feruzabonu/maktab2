@@ -7,9 +7,12 @@ export default class Boshsahifa extends Component {
         return (
             <div>
                 <div className={styles.header}>
-                   <Navbar/>
+                   <div className={styles.heading}>
+                       <p>Xush kelibsiz!</p>
+                       <p>Biz haqimizdagi ma'lumotlarni va so'nngi yangiliklarni shu yerdan kuzatib borishingiz mumkin</p>
+                   </div>
                 </div>
-                <Footer/>
+               
             </div>
         )
     }

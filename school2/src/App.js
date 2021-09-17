@@ -5,16 +5,21 @@ import Maktabhayoti from './pages/Maktabhayoti';
 import Footer from './pages/Footer';
 import Yangiliklar from './pages/Yangiliklar'
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
+import Maktabalochilari from './pages/Maktabalochilari';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Switch>
       <Route exact path="/">
+        <Navbar/>
          <Boshsahifa />
+         <Footer/>
       </Route>
       <Route exact path="/home">
+      <Navbar/>
          <Boshsahifa />
+         <Footer/>
       </Route>
       <Route exact path="/maktabhayoti">
         <Navbar/>
@@ -23,7 +28,13 @@ function App() {
       </Route>
       <Route exact path="/yangiliklar">
         <Navbar/>
-         <Yangiliklar style={{backgroundColor:'#F8F8F8'}}/>
+         <Yangiliklar/>
+         <Footer/>
+      </Route>
+     
+      <Route exact path="/maktabalochilari">
+        <Navbar/>
+         <Maktabalochilari style={{backgroundColor:'#F8F8F8'}}/>
          <Footer/>
       </Route>
       </Switch>
