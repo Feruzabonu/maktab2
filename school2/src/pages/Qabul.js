@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from '../css/qabul.module.css';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button, Collapse } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import rasm1 from '../img/qabul1.jpg'
@@ -12,7 +12,8 @@ import Footer from './Footer';
 
 export default class Qabul extends Component {
     state={
-        loader:true
+        loader:true,
+        open:false
     }
     componentDidMount() {
       setInterval(()=>{
@@ -21,6 +22,12 @@ export default class Qabul extends Component {
           })
       },1000)
     }
+    toggle() {
+        this.setState({
+          open: !this.state.open
+        });
+      }
+    
     render() {
         return (
             <div>
@@ -79,6 +86,55 @@ export default class Qabul extends Component {
                      </Row>
                  </Container>
                     </div>
+               
+               <Container>
+               <div className={styles.body3}>
+                  <h1>Qabul jarayoni</h1>
+
+                  <Row style={{width:'100%', display:'flex', justifyContent:'center'}}>
+                      <Col lg={10}>
+                          <div className={styles.savollar}>
+                          <div className={styles.savol}>
+                          <Button className={styles.btn}
+        onClick={() => this.toggle(!this.state.open)}
+        aria-controls="example-collapse-text"
+        aria-expanded={this.state.open}
+        
+      >
+       1. Online ro'yxatdan o'ting
+      </Button>
+      <Collapse in={this.state.open}>
+        <div id="example-collapse-text">
+        Yaqin kunlarda maktabimiz mana shu shaxsiy veb sahifasida online ariza topshirish bo'limi tashkil qilinadi siz farzandingizni shu sahifa orqali bizning maktabimizga masofaviy tarzda online ro'yhatdan o'tqazishingiz mumkin bo'ladi.
+        </div>
+      </Collapse>
+                          </div>
+                          <div className={styles.savol}>
+                          <Button className={styles.btn}
+        onClick={() => this.toggle(!this.state.open)}
+        aria-controls="example-collapse-text"
+        aria-expanded={this.state.open}
+      >
+        click
+      </Button>
+      <Collapse in={this.state.open}>
+        <div id="example-collapse-text">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+          labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </Collapse>
+                          </div>
+                          </div>
+                      </Col>
+                  </Row>
+                  
+      
+
+
+                
+               </div>
+               </Container>
                
                 <Footer/>
                    </div>
