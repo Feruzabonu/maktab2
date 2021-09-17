@@ -5,9 +5,22 @@ import school1 from '../img/jizhidexiaohailang-DJsbfCjhnJ4-unsplash.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BsFillAwardFill,BsPersonCheck} from 'react-icons/bs'
 import Slider from "react-slick";
-
+import ScaleLoader from 'react-spinners/ScaleLoader';
+import Navbar from './Navbar';
+import Footer from './Footer'
 export default class Maktabhayoti extends Component {
+    state={
+        loader:true
+    }
+    componentDidMount() {
+      setInterval(()=>{
+          this.setState({
+              loader:false
+          })
+      },2000)
+    }
     render() {
+      
         const settings = {
             autoplay:true,
             dots: true,
@@ -52,7 +65,14 @@ export default class Maktabhayoti extends Component {
             ]
           }
         return (
+            <div>
+        {this.state.loader ? (
+          <div className={styles.loader}>
+            <ScaleLoader color="#1EB2A6" loading={this.state.loader} size={120} />
+          </div>
+        ) : (
             <div style={{overflow:'hidden'}}>
+                <Navbar/>
                 <div className={styles.header}>
                  <h1>Maktab hayoti</h1>
                 </div>
@@ -189,7 +209,11 @@ export default class Maktabhayoti extends Component {
                     </Slider>
                     
                 </div>
+                <Footer/>
             </div>
+        )}
+        </div>
+
         )
     }
 }

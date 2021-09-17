@@ -5,11 +5,30 @@ import { Container,Row,Col } from 'react-bootstrap'
 import school1 from '../img/nam-hoang-RHNiArBkukE-unsplash.jpg'
 import ReactPlayer from "react-player"
 import { BiCalendar} from 'react-icons/bi';
-
+import ScaleLoader from 'react-spinners/ScaleLoader';
+import Navbar from './Navbar';
+import Footer from './Footer'
 export default class Boshsahifa extends Component {
+    state={
+        loader:true
+    }
+    componentDidMount() {
+      setInterval(()=>{
+          this.setState({
+              loader:false
+          })
+      },2000)
+    }
     render() {
         return (
             <div>
+        {this.state.loader ? (
+          <div className={styles.loader}>
+            <ScaleLoader color="#1EB2A6" loading={this.state.loader} size={120} />
+          </div>
+        ) : (
+            <div>
+                <Navbar/>
                 <div className={styles.header}>
                    <div className={styles.heading} style={{zIndex:'1'}}>
                        <p>Xush kelibsiz!</p>
@@ -126,7 +145,10 @@ export default class Boshsahifa extends Component {
                        </Row>
                    </Container>
                </div>
+               <Footer/>
             </div>
+               )}
+               </div>
         )
     }
 }

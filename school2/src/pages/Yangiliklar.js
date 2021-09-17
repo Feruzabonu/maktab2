@@ -6,10 +6,14 @@ import '../App.css'
 import {FaRegCalendarAlt} from 'react-icons/fa'
 import school1 from '../img/nam-hoang-RHNiArBkukE-unsplash.jpg'
 import { Container ,Row,Col} from 'react-bootstrap'
+import ScaleLoader from 'react-spinners/ScaleLoader';
+import Navbar from './Navbar';
+import Footer from './Footer'
 export default class Yangiliklar extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            loader:true,
           offset: 0,
           data: [
               {   
@@ -86,7 +90,13 @@ export default class Yangiliklar extends Component {
     .handlePageClick
     .bind(this);
     }
-    
+    componentDidMount() {
+      setInterval(()=>{
+          this.setState({
+              loader:false
+          })
+      },2000)
+    }
     receivedData() {
                 
                 const slice = this.state.data.slice(this.state.offset, this.state.offset + this.state.perPage)
@@ -126,11 +136,23 @@ export default class Yangiliklar extends Component {
   
     componentDidMount() {
         this.receivedData()
+        setInterval(()=>{
+            this.setState({
+                loader:false
+            })
+        },2000)
     }
     render() {
 
         return (
+            <div>
+            {this.state.loader ? (
+              <div className={styles.loader}>
+                <ScaleLoader color="#1EB2A6" loading={this.state.loader} size={120} />
+              </div>
+            ) : (
            <div style={{backgroundColor:'#F8F8F8',textAlign:'center'}}>
+               <Navbar/>
                <div className={styles.header}>
                   <h1>Yangiliklar</h1>
                </div>
@@ -153,8 +175,10 @@ export default class Yangiliklar extends Component {
                   containerClassName={"pagination"}
                   subContainerClassName={"pages pagination"}
                   activeClassName={"active"}/>
-              
+              <Footer/>
            </div>
+              )}
+              </div>
         )
     }
 }

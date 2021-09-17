@@ -13,30 +13,30 @@ function App() {
       <BrowserRouter>
       <Switch>
       <Route exact path="/">
-        <Navbar/>
+        
          <Boshsahifa />
-         <Footer/>
+         
       </Route>
       <Route exact path="/home">
-      <Navbar/>
+    
          <Boshsahifa />
-         <Footer/>
+         
       </Route>
       <Route exact path="/maktabhayoti">
-        <Navbar/>
+       
          <Maktabhayoti/>
-         <Footer/>
+         
       </Route>
       <Route exact path="/yangiliklar">
-        <Navbar/>
+        
          <Yangiliklar/>
-         <Footer/>
+        
       </Route>
      
       <Route exact path="/maktabalochilari">
-        <Navbar/>
-         <Maktabalochilari style={{backgroundColor:'#F8F8F8'}}/>
-         <Footer/>
+        
+         <Maktabalochilari/>
+         
       </Route>
       <Route exact path="/qabul">
         <Navbar/>

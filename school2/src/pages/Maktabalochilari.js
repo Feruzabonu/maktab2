@@ -3,10 +3,30 @@ import styles from '../css/maktabalochilari.module.css'
 import school1 from '../img/cole-keister-vEgVWRBr2VY-unsplash.jpg'
 import {FaStar} from 'react-icons/fa'
 import { Container,Row,Col} from 'react-bootstrap'
+import ScaleLoader from 'react-spinners/ScaleLoader';
+import Navbar from './Navbar';
+import Footer from './Footer'
 export default class Maktabalochilari extends Component {
+    state={
+        loader:true
+    }
+    componentDidMount() {
+      setInterval(()=>{
+          this.setState({
+              loader:false
+          })
+      },2000)
+    }
     render() {
         return (
             <div>
+            {this.state.loader ? (
+              <div className={styles.loader}>
+                <ScaleLoader color="#1EB2A6" loading={this.state.loader} size={120} />
+              </div>
+            ) : (
+            <div>
+                <Navbar/>
                 <div className={styles.header}>
                     <h1>Maktab a'lochilari</h1>
                 </div>
@@ -69,7 +89,10 @@ export default class Maktabalochilari extends Component {
                         </Row>
                     </Container>
                 </div>
+                <Footer/>
             </div>
+               )}
+               </div>
         )
     }
 }
