@@ -48,6 +48,14 @@ ul.pages li{
     list-style: none;
     color: #666A6F;
    font-size: 16px;
+  
+}
+.links{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.links:hover{
+    color: #1EB2A6;
 }
 ul.pages li+li{
     margin-top: 10px;

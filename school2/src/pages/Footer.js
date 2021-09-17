@@ -35,12 +35,12 @@ export default class Footer extends Component {
                                  <div className={styles.two}>
                                      <h5>Asosiy Sahifalar</h5>
                                      <ul className={styles.pages}>
-                                        <li><BsArrowRight style={style}/>Bosh sahifa</li>
-                                        <li><BsArrowRight style={style}/>Maktab hayoti</li>
-                                        <li><BsArrowRight style={style}/>Qabul</li>
-                                        <li><BsArrowRight style={style}/>Yangiliklar</li>
-                                        <li><BsArrowRight style={style}/>Maktab ma'muriyati</li>
-                                        <li><BsArrowRight style={style}/>Maktab a'lochilari</li>
+                                        <li className={styles.links}><BsArrowRight style={style}/>Bosh sahifa</li>
+                                        <li className={styles.links}><BsArrowRight style={style}/>Maktab hayoti</li>
+                                        <li className={styles.links}><BsArrowRight style={style}/>Qabul</li>
+                                        <li className={styles.links}><BsArrowRight style={style}/>Yangiliklar</li>
+                                        <li className={styles.links}><BsArrowRight style={style}/>Maktab ma'muriyati</li>
+                                        <li className={styles.links}><BsArrowRight style={style}/>Maktab a'lochilari</li>
                                      </ul>
                                  </div>
                              </Col>
@@ -48,9 +48,9 @@ export default class Footer extends Component {
                                  <div className={styles.three}>
                                  <h5>Qo'shimcha Sahifalar</h5>
                                      <ul className={styles.pages}>
-                                        <li><BsArrowRight style={style}/>Tadbirlar</li>
-                                        <li><BsArrowRight style={style}/>Hamkorlar</li>
-                                        <li><BsArrowRight style={style}/>Aloqa</li>
+                                        <li className={styles.links}><BsArrowRight style={style}/>Tadbirlar</li>
+                                        <li className={styles.links}><BsArrowRight style={style}/>Hamkorlar</li>
+                                        <li className={styles.links}><BsArrowRight style={style}/>Aloqa</li>
                                      </ul>
                                  </div>
                              </Col>
