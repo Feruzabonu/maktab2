@@ -19,7 +19,7 @@ export default class Navbar extends Component {
                 <div className={styles.top}>
                     <div className={styles.name}>
                         <h1 style={{color:'white'}}>258-maktab</h1>
-                        <p style={{color:'white'}}>Ixtisoslashtirilgan xususiy maktab</p>
+                        <p style={{color:'white',marginTop:'-10px'}}>Ixtisoslashtirilgan xususiy maktab</p>
                     </div>
                     <div className={styles.info}>
                      <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',marginRight:'30px'}}>

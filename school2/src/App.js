@@ -12,10 +12,14 @@ function App() {
       <BrowserRouter>
       <Switch>
       <Route exact path="/">
+        <Navbar/>
          <Boshsahifa />
+         <Footer/>
       </Route>
       <Route exact path="/home">
+      <Navbar/>
          <Boshsahifa />
+         <Footer/>
       </Route>
       <Route exact path="/maktabhayoti">
         <Navbar/>
