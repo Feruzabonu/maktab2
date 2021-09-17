@@ -39,9 +39,9 @@ function App() {
          
       </Route>
       <Route exact path="/qabul">
-        <Navbar/>
+   
          <Qabul/>
-         <Footer/>
+     
       </Route>
       </Switch>
       </BrowserRouter>

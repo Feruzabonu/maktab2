@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '../css/Footer.module.css';
+import styles from '../css/footer.module.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaInstagram, FaMap, FaTelegramPlane } from 'react-icons/fa';

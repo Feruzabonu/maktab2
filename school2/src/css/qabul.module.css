@@ -39,7 +39,52 @@
     color: #22B4A8;
 }
 .tavsilot_text p{
-    color: #B5B5B5;
+    color: #A2A2A2;
     font-size: 18px;
     
+}
+.body2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-color: #A5C9CF;
+}
+.top1{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top2{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+}
+
+.top1 img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.bottom{
+    height: 50%;
+    color: #A2A2A2;
+    font-size: 17px;
+    padding: 0px 30px;
+}
+
+
+
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
 }

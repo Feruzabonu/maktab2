@@ -2,13 +2,36 @@ import React, { Component } from 'react';
 import styles from '../css/qabul.module.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ScaleLoader from 'react-spinners/ScaleLoader';
 import rasm1 from '../img/qabul1.jpg'
+import rasm2 from '../img/rasm2.png'
+import rasm3 from '../img/rasm3.png'
+import rasm4 from '../img/rasm4.png'
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 export default class Qabul extends Component {
+    state={
+        loader:true
+    }
+    componentDidMount() {
+      setInterval(()=>{
+          this.setState({
+              loader:false
+          })
+      },1000)
+    }
     render() {
         return (
             <div>
-                <div className={styles.header}>
+               {this.state.loader ?(
+                   <div className={styles.loader}>
+                   <ScaleLoader color="#1EB2A6" loading={this.state.loader} size={120} />
+                   </div>
+               ):(
+                   <div>
+                       <Navbar/>
+                   <div className={styles.header}>
                    <h1>Qabul</h1>
                 </div>
                 <div className={styles.body}>
@@ -28,17 +51,38 @@ export default class Qabul extends Component {
                        </Row>
                    </Container>
                 </div>
+                
                 <div className={styles.body2}>
-                    <Container>
-                        <div className={styles.body2_info}>
-                              <div className={styles.top}>
-                                  <div></div>
-                                  <div></div>
-                              </div>
-                              <div className={styles.bottom}></div>
-                        </div>
-                    </Container>
-                </div>
+                 <Container style={{height:'75%'}} >
+                     <Row style={{height:'100%'}}>
+                         <Col lg={4} sm={12} md={6} >
+                             <Row style={{height:'100%', backgroundColor:'#fff', margin:'0px 10px 0px 0px',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'}}>
+                                 <Col lg={4} className={styles.top1}><img src={rasm2}/></Col>
+                                 <Col lg={8} className={styles.top2}>Ta'lim shakli</Col>
+                                 <Col lg={12} className={styles.bottom}>Bizning maktabda ta'lim shakli 3 tilda olib boriladi tojik, o'zbek va rus tilida.</Col>
+                             </Row>
+                         </Col>
+                         <Col lg={4} sm={12} md={6} >
+                             <Row style={{height:'100%', backgroundColor:'#fff',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'}}>
+                                 <Col lg={4} className={styles.top1}><img src={rasm3}/></Col>
+                                 <Col lg={8} className={styles.top2}>Bitiruvchilar</Col>
+                                 <Col lg={12} className={styles.bottom}>2020 - 2021 o'quv yilida maktabimizni 90 nafar o'quvchi bitirdi va ularning katta qismi oliy o'quv yurtlariga kirish imtihonlaridan katta natijalarni qo'lga kiritishdi</Col>
+                             </Row>
+                         </Col>
+                         <Col lg={4} sm={12} md={6} >
+                             <Row style={{height:'100%', backgroundColor:'#fff', margin:'0px 0px 0px 10px',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'}}>
+                                 <Col lg={4} className={styles.top1}><img src={rasm4}/></Col>
+                                 <Col lg={8} className={styles.top2}>O'quvchilar</Col>
+                                 <Col lg={12} className={styles.bottom}>Maktabimizda 2020 - 2021 o'quv yili hisobiga ko'ra 1365 nafar o'quvchi mavjud</Col>
+                             </Row>
+                         </Col>
+                     </Row>
+                 </Container>
+                    </div>
+               
+                <Footer/>
+                   </div>
+               )}
             </div>
         )
     }
