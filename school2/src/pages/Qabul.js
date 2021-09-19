@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from '../css/qabul.module.css';
-import { Col, Container, Row, Button, Collapse } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import rasm1 from '../img/qabul1.jpg'
@@ -10,11 +10,17 @@ import rasm4 from '../img/rasm4.png'
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+
+
+
 export default class Qabul extends Component {
     state={
         loader:true,
-        open:false
+        open:false,
+        isOpened:false
     }
+    
+  
     componentDidMount() {
       setInterval(()=>{
           this.setState({
@@ -29,6 +35,35 @@ export default class Qabul extends Component {
       }
     
     render() {
+      
+      const data=[
+        { id:1,
+          question: "O'nline ro'yxatdan o'ting.",
+          answer: "Yaqin kunlarda maktabimiz mana shu shaxsiy veb sahifasida online ariza topshirish bo'limi tashkil qilinadi siz farzandingizni shu sahifa orqali bizning maktabimizga masofaviy tarzda online ro'yhatdan o'tqazishingiz mumkin bo'ladi."
+        },
+        { id:2,
+          question: "Ariza yozing.",
+          answer: "Sizdan iltimos qilamiz farzandingizni maktabimizga ro'yhatdan o'tqazish uchun ariza yozayotganingizda namunani ko'zdan kechiring va arizani hech qanday kamchiliksiz yozing."
+        },
+        { id:3,
+          question: "Arizani ko'zdan kechiring.",
+          answer: "Sizdan iltimos qilamiz farzandingizni maktabimizga ro'yhatdan o'tqazish uchun yozgan arizangizni maktab ma'muriyatiga topshirishdan oldin yana bir bor ko'zdan kechirib chiqing."
+        },
+        { id:4,
+          question: "Kerakli hujjatlarni to'plang.",
+          answer: "Sizdan iltimos qilamiz farzandingizni maktabmizga ro'yhatdan o'tqazish uchun hujjat yig'ayotganingizda shu sahifaning ostida berilgan hujjatlar ro'yhati bilan tanishib chiqing va hech qanday kamchilikka yo'l qo'ymang !!!."
+        },
+        { id:5,
+          question: "Suhbat jarayoni.",
+          answer: "Bolangiz maktab psixologi tomonidan suhbatdan o'tqaziladi. Bolangizni suhbatdan oldin tayyorlang va un ruhiy dalda bering."
+        },
+        { id:6,
+          question: "So'nggi qaror.",
+          answer: "So'ngiz qaror maktabimiz ma'muriyati tomonidan qabul qilinadi."
+        }
+      ]
+
+      
         return (
             <div>
                {this.state.loader ?(
@@ -90,45 +125,21 @@ export default class Qabul extends Component {
                <Container>
                <div className={styles.body3}>
                   <h1>Qabul jarayoni</h1>
-
-                  <Row style={{width:'100%', display:'flex', justifyContent:'center'}}>
-                      <Col lg={10}>
-                          <div className={styles.savollar}>
-                          <div className={styles.savol}>
-                          <Button className={styles.btn}
-        onClick={() => this.toggle(!this.state.open)}
-        aria-controls="example-collapse-text"
-        aria-expanded={this.state.open}
-        
-      >
-       1. Online ro'yxatdan o'ting
-      </Button>
-      <Collapse in={this.state.open}>
-        <div id="example-collapse-text">
-        Yaqin kunlarda maktabimiz mana shu shaxsiy veb sahifasida online ariza topshirish bo'limi tashkil qilinadi siz farzandingizni shu sahifa orqali bizning maktabimizga masofaviy tarzda online ro'yhatdan o'tqazishingiz mumkin bo'ladi.
-        </div>
-      </Collapse>
-                          </div>
-                          <div className={styles.savol}>
-                          <Button className={styles.btn}
-        onClick={() => this.toggle(!this.state.open)}
-        aria-controls="example-collapse-text"
-        aria-expanded={this.state.open}
-      >
-        click
-      </Button>
-      <Collapse in={this.state.open}>
-        <div id="example-collapse-text">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-          labore wes anderson cred nesciunt sapiente ea proident.
-        </div>
-      </Collapse>
-                          </div>
-                          </div>
-                      </Col>
-                  </Row>
                   
+                <div className={styles.jarayon}>
+                   {
+                     data.map((item,i)=>(
+                       <div className={styles.item}>
+                         <div className={styles.title}>
+                           <h3>{item.id}. {item.question}</h3>
+                         </div>
+                         <div className={styles.content}>{item.answer}</div>
+                       </div>
+                     )
+
+                     )
+                   }
+                </div>
       
 
 
