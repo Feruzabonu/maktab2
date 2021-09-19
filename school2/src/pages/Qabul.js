@@ -9,6 +9,9 @@ import rasm3 from '../img/rasm3.png'
 import rasm4 from '../img/rasm4.png'
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { BsChevronUp,BsChevronDown } from 'react-icons/bs';
+import Aos from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 
@@ -16,8 +19,7 @@ import Footer from './Footer';
 export default class Qabul extends Component {
     state={
         loader:true,
-        open:false,
-        isOpened:false
+        selected:0
     }
     
   
@@ -27,13 +29,25 @@ export default class Qabul extends Component {
               loader:false
           })
       },1000)
+      Aos.init({
+        duration: 2000,
+      });
     }
-    toggle() {
+    toggle(i) {
+        if(this.state.selected==i){
+          return(
+            this.setState({
+              selected:null
+            })
+          )
+        }
+
         this.setState({
-          open: !this.state.open
-        });
+          selected:i
+        })
+
       }
-    
+   
     render() {
       
       const data=[
@@ -130,10 +144,11 @@ export default class Qabul extends Component {
                    {
                      data.map((item,i)=>(
                        <div className={styles.item}>
-                         <div className={styles.title}>
-                           <h3>{item.id}. {item.question}</h3>
+                         <div className={styles.title} onClick={()=>this.toggle(i)} style={{backgroundColor:`${this.state.selected===i? '#1EB2A6':''}`}}>
+                           <h4 style={{color:`${this.state.selected===i? '#000':''}`}}>{item.id}. {item.question}</h4>
+                           <span>{this.state.selected===i? <BsChevronUp color="#fff"/>:<BsChevronDown/>}</span>
                          </div>
-                         <div className={styles.content}>{item.answer}</div>
+                         <div className={styles.content} style={{display:`${this.state.selected===i? 'flex':''}`} } >{item.answer}</div>
                        </div>
                      )
 
