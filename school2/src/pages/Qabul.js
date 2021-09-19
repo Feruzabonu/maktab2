@@ -7,6 +7,13 @@ import rasm1 from '../img/qabul1.jpg'
 import rasm2 from '../img/rasm2.png'
 import rasm3 from '../img/rasm3.png'
 import rasm4 from '../img/rasm4.png'
+import rasm5 from '../img/rasm5.jpg'
+import rasm6 from '../img/reading-book.svg'
+import rasm7 from '../img/calendar.svg'
+import rasm8 from '../img/writing.svg'
+import rasm9 from '../img/1.svg'
+import rasm10 from '../img/2.svg'
+import rasm11 from '../img/3.svg'
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { BsChevronUp,BsChevronDown } from 'react-icons/bs';
@@ -93,10 +100,10 @@ export default class Qabul extends Component {
                 <div className={styles.body}>
                    <Container style={{height:'100%'}}>
                        <Row style={{height:'100%'}}>
-                       <Col lg={6} style={{backgroundColor:'#F7F5F6', height:'100%', display:'flex', justifyContent:'center', padding:'5', alignItems:'center', }}>
+                       <Col lg={6} style={{backgroundColor:'#F3F3F3', height:'100%', display:'flex', justifyContent:'center', padding:'5', alignItems:'center', }}>
                               <img src={rasm1} style={{width:'100%'}}/>
                             </Col>
-                            <Col lg={6} style={{backgroundColor:'#fff', height:'100%'}}>
+                            <Col lg={6} style={{backgroundColor:'#fff', height:'100%',  display:'flex', alignItems:'center'}}>
                                 <div className={styles.tavsilot_text}>
                                 <h1>Qabul jarayoni bo'yicha tavsilotlar</h1>
                                 <p>
@@ -138,7 +145,7 @@ export default class Qabul extends Component {
                
                <Container>
                <div className={styles.body3}>
-                  <h1>Qabul jarayoni</h1>
+                  <h1 style={{color:'#1EB2A6'}}>Qabul jarayoni</h1>
                   
                 <div className={styles.jarayon}>
                    {
@@ -160,8 +167,70 @@ export default class Qabul extends Component {
 
                 
                </div>
+
+               <div className={styles.body}>
+                   <Container style={{height:'100%'}}>
+                       <Row style={{height:'100%'}}>
+                       
+                            <Col lg={6} style={{backgroundColor:'#fff', height:'100%', display:'flex', alignItems:'center'}}>
+                                <div className={styles.tavsilot_text}>
+                                <h1>Imtihonda ishtirok etish talablari</h1>
+                                <p>
+                                Maktabimiz iqtisoslashtirilgan davlat umumta'lim maktabi bo'lganligi sababli 5-sinfdan boshlab undan yuqori barcha sinflarimizga qabul uchun har yili 1-avgust kunida O'zbekiston Respublikasi Xalq ta'limi vazirligi tomonidan maxsus test sinovlari o'tqaziladi. Shu test sinovidan yetarli natijaga erishgan o'quvchilar maktabimizga qabul qilinadi.
+                                </p>
+                                </div>
+                            </Col>
+                            <Col lg={6} style={{backgroundColor:'#F3F3F3', height:'100%', display:'flex', justifyContent:'center', padding:'5', alignItems:'center', }}>
+                              <img src={rasm1} style={{width:'100%'}}/>
+                            </Col>
+                       </Row>
+                   </Container>
+                </div>
                </Container>
                
+               <div className={styles.body4}>
+                 <Container style={{height:'100%'}}>
+                   <div className={styles.malumot}>
+                         <div className={styles.info}>
+                           <div className={styles.icon}> <img src={rasm6}/></div>
+                           <div className={styles.text}><h3>O'quv yili</h3><p>2020-2021</p></div>
+                         </div>
+                         <div className={styles.info}>
+                           <div className={styles.icon}> <img src={rasm8}/></div>
+                           <div className={styles.text}><h3>Hujjat topshirish muddati</h3><p>1-iyundan 1-avgustgacha</p></div>
+                         </div>
+                         <div className={styles.info}>
+                           <div className={styles.icon}> <img src={rasm7}/></div>
+                           <div className={styles.text}><h3>Imtihon kuni</h3><p>29-iyul</p></div>
+                         </div>
+                   </div>
+                 </Container>
+               </div>
+
+               <Container>
+                 <div className={styles.body5}>
+                 <Row style={{height:'100%', width:'100%'}}>
+                       <Col lg={6} className={styles.hujjat_img}>
+                             
+                            </Col>
+                            <Col lg={6} style={{ height:'100%',  display:'flex', alignItems:'center'}}>
+                                <div className={styles.hujjat_text}>
+                                <h1>Kerakli hujjatlar</h1>
+                                <p>Samarqand viloyati Samarqand tumani Qo'lbai poyon MFY 33- IDUM</p>
+                                <div className={styles.hujjat_list}>
+                                  <img src={rasm9}/> <h5>Maktab direktori nomiga ariza.</h5>
+                                </div>
+                                <div className={styles.hujjat_list}>
+                                  <img src={rasm10}/> <h5>Tug'ilganlik haqida guvohnoma va 3x4 o'lchamdagi 8 dona rasm. Shu bilan birga ota-onasining pasportidan nusxasi.</h5>
+                                </div>
+                                <div className={styles.hujjat_list}>
+                                  <img src={rasm11}/> <h5>Tibbiy ko'rik natijasi.</h5>
+                                </div>
+                                </div>
+                            </Col>
+                       </Row>
+                 </div>
+               </Container>
                 <Footer/>
                    </div>
                )}
