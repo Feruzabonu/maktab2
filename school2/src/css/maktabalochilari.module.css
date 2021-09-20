@@ -44,3 +44,115 @@
     height: 100vh;
     background-color: white;
 }
+@media screen and (max-width:400px) {
+    .header{
+        text-align: center;
+    }
+    .alochilar{
+        width: 100%;
+        background-color:#F8F8F8;
+        text-align: center !important;
+        padding:50px 60px;
+    
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        border-radius: 5px;
+        border:1px solid #1EB2A6;
+        width: 100%;
+    
+    }
+    .cardImg{
+        width: 100% !important;
+    }
+    .cardText{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:768px) {
+    .header{
+        text-align: center;
+    }
+    .alochilar{
+        width: 100%;
+        background-color:#F8F8F8;
+        text-align: center !important;
+        padding:50px 60px;
+    
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        border-radius: 5px;
+        border:1px solid #1EB2A6;
+        width: 100%;
+    
+    }
+    .cardImg{
+        width: 100% !important;
+    }
+    .cardText{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:992px) {
+    .header{
+        text-align: center;
+    }
+    .alochilar{
+        width: 100%;
+        background-color:#F8F8F8;
+        text-align: center !important;
+        padding:50px 60px;
+    
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        border-radius: 5px;
+        border:1px solid #1EB2A6;
+        width: 100%;
+    
+    }
+    .cardImg{
+        width: 50%;
+    }
+    .cardText{
+        width: 50%;
+    }
+}
+@media screen and (min-width:993px) {
+    .header{
+        text-align: center;
+    }
+    .alochilar{
+        width: 100%;
+        background-color:#F8F8F8;
+        text-align: center !important;
+        padding:50px 60px;
+    
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        border-radius: 5px;
+        border:1px solid #1EB2A6;
+        width: 100%;
+    
+    }
+    .cardImg{
+        width: 40%;
+    }
+    .cardText{
+        width: 60%;
+    }
+}

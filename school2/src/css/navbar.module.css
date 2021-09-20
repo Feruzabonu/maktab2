@@ -21,7 +21,7 @@
 
 .navbarDiv{
     background-color: rgba(255,255,255,0.45);
-    position: absolute;
+    position: absolute !important;
     top: 15%;
     width: 96%;
     height: 70px;
@@ -30,6 +30,7 @@
     flex-direction: row;
     align-items: center !important;
     justify-content: space-between;
+    z-index:2 !important;
 }
 .navbar ul{
     text-align: left;
@@ -74,7 +75,8 @@
     height: 70px;
     padding: 0 20px;
     overflow-x: hidden !important;
-    z-index: 11111111111111111 !important;
+    z-index:2 !important;
+
 }
 .mobileNavbar .rightNavbar{
     height: 100%;

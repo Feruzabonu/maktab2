@@ -27,13 +27,10 @@ export default class Boshsahifa extends Component {
             <ScaleLoader color="#1EB2A6" loading={this.state.loader} size={120} />
           </div>
         ) : (
-            <div>
+            <div style={{overflow:'hidden',zIndex:'1'}}>
                 <Navbar/>
                 <div className={styles.header}>
-                   <div className={styles.heading} style={{zIndex:'1'}}>
-                       <p>Xush kelibsiz!</p>
-                       <p>Biz haqimizdagi ma'lumotlarni va so'nngi yangiliklarni shu yerdan kuzatib borishingiz mumkin</p>
-                   </div>
+                   
                 </div>
                 <div className={styles.video}>
                  <Container>
@@ -45,7 +42,7 @@ export default class Boshsahifa extends Component {
                                style={{marginTop:'70px',position:'inherit',zIndex:'111111111111'}}
                                width='100%'
                                height='400px'
-        url="https://www.youtube.com/watch?v=ug50zmP9I7s"
+        url="https://youtu.be/qObZJS_PyuM"
       />
                          </Col>
                          <Col lg={6}>
@@ -104,10 +101,10 @@ export default class Boshsahifa extends Component {
                 </div>
                <div className={styles.tadbirlar}>
                    <h2>So'nngi tadbirlar</h2>
-                   <Container>
+                   <Container style={{padding:'0'}}>
                        <Row>
-                           <Col lg={4}>
-                           <div style={{width:'350px',height:'500px',margin:'30px',boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',borderRadius:'5px'}}>
+                           <Col lg={4} md={6} sm={12} style={{padding:'0'}}>
+                           <div className={styles.tadbirCard}>
                         <div style={{width:'100%',height:'250px'}}>
                             <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'5px 5px 0 0'}}/>
                         </div>
@@ -118,8 +115,8 @@ export default class Boshsahifa extends Component {
                          </div>
                     </div>
                            </Col>
-                           <Col lg={4}>
-                           <div style={{width:'350px',height:'500px',margin:'30px',boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',borderRadius:'5px'}}>
+                           <Col lg={4} md={6} sm={12} style={{padding:'0'}}>
+                           <div className={styles.tadbirCard} >
                         <div style={{width:'100%',height:'250px'}}>
                             <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'5px 5px 0 0'}}/>
                         </div>
@@ -130,8 +127,8 @@ export default class Boshsahifa extends Component {
                          </div>
                     </div>
                            </Col>
-                           <Col lg={4}>
-                           <div style={{width:'350px',height:'500px',margin:'30px',boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',borderRadius:'5px'}}>
+                           <Col lg={4} md={6} sm={12} style={{padding:'0'}}>
+                           <div className={styles.tadbirCard} >
                         <div style={{width:'100%',height:'250px'}}>
                             <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'5px 5px 0 0'}}/>
                         </div>

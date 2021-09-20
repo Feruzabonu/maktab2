@@ -34,12 +34,12 @@ export default class Maktabalochilari extends Component {
                     <h1>Maktab a'lochilari</h1>
                     <Container>
                         <Row>
-                            <Col lg={6}>
+                            <Col lg={6} md={12} sm={12}>
                             <div className={styles.card}>
-                        <div style={{width:'300px',height:'200px'}}>
+                        <div className={styles.cardImg}>
                          <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
                         </div>
-                        <div style={{padding:'10px',backgroundColor:'white'}}>
+                        <div className={styles.cardText} style={{padding:'10px',backgroundColor:'white'}}>
                             <p style={{color:'#1EB2A6',fontWeight:'600',marginTop:'10px'}}>A'lochi o'quvchi</p>
                             <h5 style={{fontSize:'23px',marginTop:'-18px',marginLeft:'10px'}}>Azizov Abror</h5>
                             <FaStar style={{color:'#1EB2A6',marginLeft:'10px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/>
@@ -47,12 +47,12 @@ export default class Maktabalochilari extends Component {
                         </div>
                     </div>
                             </Col>
-                            <Col lg={6}>
+                            <Col lg={6} md={12} sm={12}>
                             <div className={styles.card}>
-                        <div style={{width:'300px',height:'200px'}}>
+                        <div className={styles.cardImg}>
                          <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
                         </div>
-                        <div style={{padding:'10px',backgroundColor:'white'}}>
+                        <div className={styles.cardText} style={{padding:'10px',backgroundColor:'white'}}>
                             <p style={{color:'#1EB2A6',fontWeight:'600',marginTop:'10px'}}>A'lochi o'quvchi</p>
                             <h5 style={{fontSize:'23px',marginTop:'-18px',marginLeft:'10px'}}>Azizov Abror</h5>
                             <FaStar style={{color:'#1EB2A6',marginLeft:'10px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/>
@@ -60,12 +60,12 @@ export default class Maktabalochilari extends Component {
                         </div>
                     </div>
                             </Col>
-                            <Col lg={6}>
+                            <Col lg={6} md={12} sm={12}>
                             <div className={styles.card}>
-                        <div style={{width:'300px',height:'200px'}}>
+                        <div className={styles.cardImg}>
                          <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
                         </div>
-                        <div style={{padding:'10px',backgroundColor:'white'}}>
+                        <div className={styles.cardText} style={{padding:'10px',backgroundColor:'white'}}>
                             <p style={{color:'#1EB2A6',fontWeight:'600',marginTop:'10px'}}>A'lochi o'quvchi</p>
                             <h5 style={{fontSize:'23px',marginTop:'-18px',marginLeft:'10px'}}>Azizov Abror</h5>
                             <FaStar style={{color:'#1EB2A6',marginLeft:'10px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/>
@@ -73,12 +73,12 @@ export default class Maktabalochilari extends Component {
                         </div>
                     </div>
                             </Col>
-                            <Col lg={6}>
+                            <Col lg={6} md={12} sm={12}>
                             <div className={styles.card}>
-                        <div style={{width:'300px',height:'200px'}}>
+                        <div className={styles.cardImg}>
                          <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
                         </div>
-                        <div style={{padding:'10px',backgroundColor:'white'}}>
+                        <div className={styles.cardText} style={{padding:'10px',backgroundColor:'white'}}>
                             <p style={{color:'#1EB2A6',fontWeight:'600',marginTop:'10px'}}>A'lochi o'quvchi</p>
                             <h5 style={{fontSize:'23px',marginTop:'-18px',marginLeft:'10px'}}>Azizov Abror</h5>
                             <FaStar style={{color:'#1EB2A6',marginLeft:'10px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/><FaStar style={{color:'#1EB2A6',marginLeft:'5px'}}/>

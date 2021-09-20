@@ -14,7 +14,7 @@ export default class Navbar extends Component {
     }
     render() {
         return (
-            <div>
+            <div style={{zIndex:'2'}}>
                 
                 <div className={styles.top}>
                     <div className={styles.name}>

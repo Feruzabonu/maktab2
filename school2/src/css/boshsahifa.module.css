@@ -10,20 +10,13 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    z-index: 0 !important;
+    z-index: 1 !important;
 }
-.heading{
-position: absolute;
-top: 50%;
-left: 5%;
-width: 400px;
-height: max-content;
-background-color:rgba(255,255,255,0.35);
-padding:20px;
-z-index: 1 !important;
+.header h1{
+    color:white;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 150px;
 }
 .heading p{
     color:white;
@@ -32,6 +25,14 @@ z-index: 1 !important;
 .tadbirlar{
     text-align: center;
     padding-top: 100px;
+}
+.tadbirCard{
+    width: 350px;
+    height: 500px;
+    margin:30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+    background-color: white;
 }
 .video{
     text-align: center;
@@ -99,4 +100,59 @@ z-index: 1 !important;
     width: 100%;
     height: 100vh;
     background-color: white;
+}
+@media screen and (max-width:400px) {
+    .heading{
+    width: 90%;
+    }
+    .heading p{
+        z-index: 1 !important; 
+    }
+    .tadbirCard{
+        width: 95% !important;
+        margin:5% !important;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .heading{
+    width: 90%;
+    }
+    .heading p{
+        z-index: 1 !important; 
+    }
+    .tadbirCard{
+        width: 95% !important;
+        margin:5% !important;
+    }
+
+}
+@media screen and (max-width:992px) {
+    .heading{
+    width: 90%;
+    }
+    .heading p{
+        z-index: 1 !important; 
+    }
+    .tadbirCard{
+        width: 95% !important;
+        margin:5% !important;
+    }
+
+}
+@media screen and (max-width:1200px) {
+    .heading{
+    width: 350px;
+    }
+    .heading p{
+        z-index: 1 !important; 
+    }
+    .tadbirCard{
+        width: 98% !important;
+        margin:20px !important;
+    }
+    .tadbirlar{
+        margin-bottom: 100px !important;
+    }
+
 }
