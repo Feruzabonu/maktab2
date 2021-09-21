@@ -7,6 +7,7 @@ import Yangiliklar from './pages/Yangiliklar'
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import Maktabalochilari from './pages/Maktabalochilari';
 import Qabul from './pages/Qabul';
+import Maktabmamuriyati from './pages/Maktabmamuriyati';
 function App() {
   return (
     <div className="App">
@@ -41,6 +42,11 @@ function App() {
       <Route exact path="/qabul">
    
          <Qabul/>
+     
+      </Route>
+      <Route exact path="/maktabmamuriyati">
+   
+         <Maktabmamuriyati/>
      
       </Route>
       </Switch>

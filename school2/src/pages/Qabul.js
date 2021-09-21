@@ -92,8 +92,8 @@ export default class Qabul extends Component {
                    <ScaleLoader color="#1EB2A6" loading={this.state.loader} size={120} />
                    </div>
                ):(
-                   <div>
-                       <Navbar/>
+                   <div >
+                       <Navbar />
                    <div className={styles.header}>
                    <h1>Qabul</h1>
                 </div>
