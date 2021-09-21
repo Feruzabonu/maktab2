@@ -29,7 +29,7 @@
 .tadbirCard{
     width: 350px;
     height: 500px;
-    margin:30px;
+    margin:30px !important;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 5px;
     background-color: white;
@@ -171,7 +171,7 @@
         z-index: 1 !important; 
     }
     .tadbirCard{
-        width: 95% !important;
+        width: 90% !important;
         margin:5% !important;
     }
     .contact{
@@ -196,7 +196,7 @@
         z-index: 1 !important; 
     }
     .tadbirCard{
-        width: 95% !important;
+        width: 90% !important;
         margin:5% !important;
     }
 
@@ -209,7 +209,7 @@
         z-index: 1 !important; 
     }
     .tadbirCard{
-        width: 95% !important;
+        width: 90% !important;
         margin:5% !important;
     }
 

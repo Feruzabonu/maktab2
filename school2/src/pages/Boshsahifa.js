@@ -173,9 +173,9 @@ export default class Boshsahifa extends Component {
                    <h2>So'nngi tadbirlar</h2>
                    <Container style={{padding:'0'}}>
                        <Row>
-                           <Col lg={4} md={6} sm={12} style={{padding:'0'}}>
-                           <div className={styles.tadbirCard}>
-                        <div style={{width:'100%',height:'250px'}}>
+                           <Col lg={4} md={6} sm={12} style={{padding:'0'}} className={styles.tadbirCard}>
+                           
+                        <div style={{height:'250px'}}>
                             <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'5px 5px 0 0'}}/>
                         </div>
                         <div style={{textAlign:"left",padding:'20px',backgroundColor:'white'}}>
@@ -183,10 +183,10 @@ export default class Boshsahifa extends Component {
                             <h4 style={{marginTop:'20px'}}>Build your Dream Software & Engineering Career</h4>
                             <p style={{color:'#9D9D9D',marginTop:'20px'}}>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                          </div>
-                    </div>
+                    
                            </Col>
-                           <Col lg={4} md={6} sm={12} style={{padding:'0'}}>
-                           <div className={styles.tadbirCard} >
+                           <Col lg={4} md={6} sm={12} style={{padding:'0'}} className={styles.tadbirCard}>
+                           
                         <div style={{width:'100%',height:'250px'}}>
                             <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'5px 5px 0 0'}}/>
                         </div>
@@ -195,10 +195,10 @@ export default class Boshsahifa extends Component {
                             <h4 style={{marginTop:'20px'}}>Build your Dream Software & Engineering Career</h4>
                             <p style={{color:'#9D9D9D',marginTop:'20px'}}>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                          </div>
-                    </div>
+                    
                            </Col>
-                           <Col lg={4} md={6} sm={12} style={{padding:'0'}}>
-                           <div className={styles.tadbirCard} >
+                           <Col lg={4} md={6} sm={12} style={{padding:'0'}} className={styles.tadbirCard}>
+                           
                         <div style={{width:'100%',height:'250px'}}>
                             <img src={school1} style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'5px 5px 0 0'}}/>
                         </div>
@@ -207,7 +207,7 @@ export default class Boshsahifa extends Component {
                             <h4 style={{marginTop:'20px'}}>Build your Dream Software & Engineering Career</h4>
                             <p style={{color:'#9D9D9D',marginTop:'20px'}}>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                          </div>
-                    </div>
+                    
                            </Col>
                        </Row>
                    </Container>
