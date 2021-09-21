@@ -27,9 +27,9 @@
     padding-top: 100px;
 }
 .tadbirCard{
-    width: 350px;
+    width: 32% !important;
     height: 500px;
-    margin:30px !important;
+    margin:20px !important;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 5px;
     background-color: white;
