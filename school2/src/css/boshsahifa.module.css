@@ -101,6 +101,59 @@
     height: 100vh;
     background-color: white;
 }
+.hamkorlar{
+    margin-top: 60px;
+    text-align: center;
+}
+.hamkor{
+    display: flex !important;
+    justify-content: center !important;
+    align-items:center !important;
+    flex-direction: column !important;
+    padding: 20px !important;
+}
+.hamkor p{
+    color:rgba(0, 0, 0, 0.6)
+}
+.imgHamkor{
+    width: 100px;
+    height: 100px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamkorlar h2{
+    display: inline-block;
+    position: relative;
+}
+.hamkorlar h2::after{
+    content: '';
+    position: absolute;
+    top: 140%;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color:#1EB2A6
+}
+.form{
+    padding:20px;
+}
+.form h2{
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+}
+.form h2::after{
+    content: '';
+    position: absolute;
+    top: 140%;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color:#1EB2A6
+}
 @media screen and (max-width:400px) {
     .heading{
     width: 90%;
