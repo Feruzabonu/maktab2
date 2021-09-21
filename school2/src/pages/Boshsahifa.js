@@ -8,6 +8,33 @@ import { BiCalendar} from 'react-icons/bi';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import Navbar from './Navbar';
 import Footer from './Footer'
+import Slider from "react-slick";
+import school from "../img/gerb.jpg";
+import her2 from "../img/h2.jpg";
+import her3 from "../img/h3.jpg";
+import her4 from "../img/h4.jpg";
+import her5 from "../img/h5.png";
+import her6 from "../img/h6.png";
+import { Form, Input, Button } from 'antd';
+import { YMaps, Map ,Clusterer, Placemark, 
+    TypeSelector, ZoomControl, GeolocationControl, RouteButton, TrafficControl} from 'react-yandex-maps';
+
+    const { TextArea } = Input;
+const layout = {
+  labelCol: {
+    span: 8,
+  },
+  wrapperCol: {
+    span: 16,
+  },
+};
+const tailLayout = {
+  wrapperCol: {
+    offset: 8,
+    span: 16,
+  },
+};
+
 export default class Boshsahifa extends Component {
     state={
         loader:true
@@ -20,6 +47,49 @@ export default class Boshsahifa extends Component {
       },2000)
     }
     render() {
+        const settings = {
+            autoplay:true,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                      slidesToShow: 6,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true
+                    }
+                  },
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                }
+            ]
+          }
         return (
             <div>
         {this.state.loader ? (
@@ -138,6 +208,124 @@ export default class Boshsahifa extends Component {
                             <p style={{color:'#9D9D9D',marginTop:'20px'}}>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                          </div>
                     </div>
+                           </Col>
+                       </Row>
+                   </Container>
+               </div>
+               <div className={styles.hamkorlar}>
+                   <h2>Bizning hamkorlar</h2>
+               <Slider {...settings} style={{padding:'20px'}}>
+               <div className={styles.hamkor}>
+                <div className={styles.imgHamkor} style={{ backgroundColor: "white" }}>
+                  <a href="https://president.uz/oz" target="_blank">
+                    <img src={school} style={{width:'100%',height:'100%',borderRadius:'50%',objectFit:'cover'}}/>
+                  </a>
+                </div>
+                <p>O'zbekiston Respublikasi Prezidentining rasmiy veb-sayti</p>
+              </div>
+              <div className={styles.hamkor}>
+                <div className={styles.imgHamkor} style={{ backgroundColor: "white" }}>
+                  <a href="https://www.gov.uz/uz" target="_blank">
+                    <img src={her2} style={{width:'90%',height:'90%',borderRadius:'50%',objectFit:'cover'}}/>
+                  </a>
+                </div>
+                <p>O'zbekiston Respublikasining Hukumat portali</p>
+              </div>
+              <div className={styles.hamkor}>
+                <div className={styles.imgHamkor} style={{ backgroundColor: "white" }}>
+                  <a href="https://lex.uz/" target="_blank">
+                    <img src={her3} style={{width:'90%',height:'90%',borderRadius:'50%',objectFit:'cover'}}/>
+                  </a>
+                </div>
+                <p>O'zbekiston Respublikasi qonun hujjatlari milliy bazasi</p>
+              </div>
+              <div className={styles.hamkor} >
+                <div className={styles.imgHamkor} style={{ backgroundColor: "white" }}>
+                  <a href="https://my.gov.uz/oz" target="_blank">
+                    <img src={her4} style={{width:'90%',height:'90%',borderRadius:'50%',objectFit:'cover'}}/>
+                  </a>
+                </div>
+                <p>Interaktiv davlat xizmatlarining Yagona portali</p>
+              </div>
+              <div className={styles.hamkor}>
+                <div className={styles.imgHamkor} style={{ backgroundColor: "white" }}>
+                  <a href="https://www.uzedu.uz/" target="_blank">
+                    <img src={her5} style={{width:'100%',height:'100%',borderRadius:'50%',objectFit:'cover'}}/>
+                  </a>
+                </div>
+                <p>O'zbekiston Respublikasi xalq ta'limi vazirligi</p>
+              </div>
+              <div className={styles.hamkor}>
+                <div className={styles.imgHamkor} style={{ backgroundColor: "white" }}>
+                  <a href="https://ittower.uz/" target="_blank">
+                    <img src={her6} style={{width:'90%',height:'90%',borderRadius:'50%',objectFit:'cover'}}/>
+                  </a>
+                </div>
+                <p>IT Tower firmasi </p>
+              </div>
+              </Slider>
+               </div>
+               <div className={styles.kontakt}>
+                   <Container style={{backgroundColor:'white',padding:'0',marginTop:'60px'}}>
+                       <Row>
+                           <Col lg={6}>
+                           <YMaps>
+    <div style={{width:'100%',height:'400px',boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}}>
+     
+      <Map width='100%' height='100%' defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
+    </div>
+  </YMaps>
+                           </Col>
+                           <Col lg={6} className={styles.form}>
+                               <h2>Biz bilan bog'laning</h2>
+                               <div style={{display:'flex',flexDirection:'row',marginTop:'30px'}}>
+                                   <div style={{paddingRight:'20px'}}>
+                                       <h5>Manzil:</h5>
+                                       <p style={{fontSize:'15px',color:'rgba(0,0,0,0.5)'}}>Yakkasaroy tumani</p>
+                                   </div>
+                                   <div style={{paddingRight:'20px'}}>
+                                    <h5>E-mail:</h5>
+                                       <p style={{fontSize:'15px',color:'rgba(0,0,0,0.5)'}}>jbvhqbvbyuwebv@gmail.com</p>
+                                   </div>
+                                <div style={{paddingRight:'10px'}}>
+                                    <h5>Telefon:</h5>
+                                    <p style={{fontSize:'15px',color:'rgba(0,0,0,0.5)'}}>+823721365175</p>
+                                </div>
+
+                               </div>
+                               <Form className={styles.formInput}  style={{width:'100%',marginLeft:'170px'}} {...layout} ref={this.formRef} name="control-ref" onFinish={this.onFinish}>
+        <Form.Item
+          name="name"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input style={{borderRadius:'10px',padding:'8px'}}/>
+        </Form.Item>
+        <Form.Item
+          name="email"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input style={{borderRadius:'10px',padding:'8px'}}/>
+        </Form.Item>
+        <Form.Item name="text">
+        <TextArea
+        style={{borderRadius:'10px',padding:'8px'}}
+          autoSize={{ minRows: 3, maxRows: 3 }}
+        />
+      </Form.Item>
+        <Form.Item {...tailLayout}>
+          <Button className={styles.btnForm} htmlType="submit" style={{backgroundColor:'white',color:'#1C487A',fontWeight:'800',width:'100px'}}>
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
                            </Col>
                        </Row>
                    </Container>
