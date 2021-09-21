@@ -138,7 +138,7 @@
     background-color:#1EB2A6
 }
 .form{
-    padding:20px;
+    padding:30px !important;
 }
 .form h2{
     display: inline-block;
@@ -154,6 +154,15 @@
     height: 3px;
     background-color:#1EB2A6
 }
+.address{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px !important;
+}
+.address div{
+    width: 20% !important;
+}
 @media screen and (max-width:400px) {
     .heading{
     width: 90%;
@@ -164,6 +173,18 @@
     .tadbirCard{
         width: 95% !important;
         margin:5% !important;
+    }
+    .contact{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px !important;
+    }
+    .address div{
+        width: 100% !important;
     }
 
 }
