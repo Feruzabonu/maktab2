@@ -22,11 +22,11 @@ export default class Maktabmamuriyati extends Component {
             },
             {   id:2,
                 rasm:rasm1,
-                lavozim:'Maktab Direktori',
-                FIO:'Ravshanova Mamlakat Sulaymonovna',
-                mutaxasisligi:"Rus tili filologiya o'qituvchi",
-                tel:'+998906056115',
-                qoshimcha:"Xalq ta'limi a'lochisi I -toifali mutaxasis"
+                lavozim:"O'quv va tarbiyaviy ishlar bo'yicha direktor o'rinbosari",
+                FIO:'Xusenova Maryam Hakimovna',
+                mutaxasisligi:"Tojik tili va adabiyoti o'qituvchisi",
+                tel:'+998937279465',
+                qoshimcha:"2-toifali mutaxasis 1990-yildan beri maktabda fidokorona faoliyat olib bormoqda"
             },
             {   id:3,
                 rasm:rasm2,
@@ -92,7 +92,7 @@ export default class Maktabmamuriyati extends Component {
             position='top'
             // style={{width:'415px', height:'300px'}}
           />
-          <MDBCardBody style={{textAlign:'center', padding:'30px 30px'}} className={styles.card_body}>
+          <MDBCardBody style={{textAlign:'center', padding:'20px 20px', display:'flex', flexDirection:'column', justifyContent:'center'}} className={styles.card_body}>
             <MDBCardTitle>{item.FIO}</MDBCardTitle>
             <MDBCardText style={{fontSize:'18px', fontWeight:'500'}}>
               {item.lavozim}
