@@ -266,11 +266,11 @@ export default class Boshsahifa extends Component {
               </Slider>
                </div>
                <div className={styles.kontakt}>
-                   <Container style={{backgroundColor:'white',padding:'0',marginTop:'60px'}}>
+                   <Container className={styles.contact} style={{backgroundColor:'white',padding:'0',marginTop:'60px',marginBottom:'30px'}}>
                        <Row>
                            <Col lg={6}>
                            <YMaps>
-    <div style={{width:'100%',height:'400px',boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}}>
+    <div style={{width:'100%',height:'100%',boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}}>
      
       <Map width='100%' height='100%' defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
     </div>
@@ -278,7 +278,7 @@ export default class Boshsahifa extends Component {
                            </Col>
                            <Col lg={6} className={styles.form}>
                                <h2>Biz bilan bog'laning</h2>
-                               <div style={{display:'flex',flexDirection:'row',marginTop:'30px'}}>
+                               <div className={styles.address}>
                                    <div style={{paddingRight:'20px'}}>
                                        <h5>Manzil:</h5>
                                        <p style={{fontSize:'15px',color:'rgba(0,0,0,0.5)'}}>Yakkasaroy tumani</p>
@@ -293,7 +293,7 @@ export default class Boshsahifa extends Component {
                                 </div>
 
                                </div>
-                               <Form className={styles.formInput}  style={{width:'100%',marginLeft:'170px'}} {...layout} ref={this.formRef} name="control-ref" onFinish={this.onFinish}>
+                               <Form className={styles.formInput}  style={{width:'100%',marginLeft:'0px'}} {...layout} ref={this.formRef} name="control-ref" onFinish={this.onFinish}>
         <Form.Item
           name="name"
           rules={[
@@ -302,7 +302,7 @@ export default class Boshsahifa extends Component {
             },
           ]}
         >
-          <Input style={{borderRadius:'10px',padding:'8px'}}/>
+          <Input placeholder="F.I.O ni kiriting" style={{padding:'5px',width:'90%',border:'1px solid #1EB2A6',marginBottom:'5px',outline:'none',fontSize:'14px'}}/>
         </Form.Item>
         <Form.Item
           name="email"
@@ -312,20 +312,29 @@ export default class Boshsahifa extends Component {
             },
           ]}
         >
-          <Input style={{borderRadius:'10px',padding:'8px'}}/>
+          <Input placeholder="E-mail kiriting" style={{padding:'5px',width:'90%',border:'1px solid #1EB2A6',marginBottom:'5px',outline:'none',fontSize:'14px'}}/>
         </Form.Item>
         <Form.Item name="text">
         <TextArea
-        style={{borderRadius:'10px',padding:'8px'}}
-          autoSize={{ minRows: 3, maxRows: 3 }}
+        placeholder="Savollar yoki takliflar"
+        style={{padding:'5px',width:'90%',border:'1px solid #1EB2A6',marginBottom:'5px',outline:'none',fontSize:'14px'}}
+          autoSize={{ minRows: 5, maxRows: 5 }}
         />
       </Form.Item>
         <Form.Item {...tailLayout}>
-          <Button className={styles.btnForm} htmlType="submit" style={{backgroundColor:'white',color:'#1C487A',fontWeight:'800',width:'100px'}}>
+          <Button className={styles.btnForm} htmlType="submit" style={{backgroundColor:'#1EB2A6',color:'white',fontWeight:'700',width:'100px',border:'none'}}>
             Submit
           </Button>
         </Form.Item>
       </Form>
+      <div style={{display:'flex',flexDirection:'row',marginTop:'30px'}}>
+          <span style={{color:'#1EB2A6',fontWeight:'700',marginRight:'10px',cursor:'pointer'}}>Telegram</span>
+          <span style={{color:'#1EB2A6',fontWeight:'700',marginRight:'10px',cursor:'pointer'}}>Youtube</span>
+          <span style={{color:'#1EB2A6',fontWeight:'700',marginRight:'10px',cursor:'pointer'}}>Facebook</span>
+          <span style={{color:'#1EB2A6',fontWeight:'700',marginRight:'10px',cursor:'pointer'}}>Instagram</span>
+
+      </div>
+
                            </Col>
                        </Row>
                    </Container>
