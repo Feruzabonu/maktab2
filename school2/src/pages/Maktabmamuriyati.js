@@ -8,8 +8,24 @@ import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardF
 import rasm1 from '../img/mamuriyat1.webp'
 import rasm2 from '../img/mamuriyat2.webp'
 import rasm3 from '../img/mamuriyat3.webp'
+import Aos from 'aos';
+import 'aos/dist/aos.css'; 
+import ScaleLoader from 'react-spinners/ScaleLoader';
 
 export default class Maktabmamuriyati extends Component {
+  state={
+     loader:true
+  }
+  componentDidMount() {
+    setInterval(()=>{
+        this.setState({
+            loader:false
+        })
+    },1000)
+    Aos.init({
+      duration: 2000,
+    });
+  }
     render() {
         const data=[
             {   id:1,
@@ -70,8 +86,16 @@ export default class Maktabmamuriyati extends Component {
             }
         ]
         return (
+          
             <div>
-               <Navbar/>
+              {
+                this.state.loader ?(
+                  <div className={styles.loader}>
+                  <ScaleLoader color="#1EB2A6" loading={this.state.loader} size={120} />
+                  </div>
+              ):(
+<div>
+<Navbar/>
                <div className={styles.header}>
                    <h1> Maktab ma'muriyati.</h1>
                </div>
@@ -85,7 +109,7 @@ export default class Maktabmamuriyati extends Component {
                        data && Array.isArray(data)?data.map((item,key)=>{
                          return(
       <MDBCol>
-        <MDBCard className='h-100' style={{boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px', height:'560px', marginBottom:'30px'}} className={styles.card}>
+        <MDBCard data-aos="flip-right" className='h-100' style={{boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px', height:'560px', marginBottom:'30px'}} className={styles.card}>
           <MDBCardImage
             src={item.rasm}
             alt='...'
@@ -115,6 +139,10 @@ export default class Maktabmamuriyati extends Component {
                    </div>
                </Container>
                <Footer/>
+</div>
+              )
+              }
+               
             </div>
         )
     }
