@@ -100,10 +100,10 @@ export default class Qabul extends Component {
                 <div className={styles.body}>
                    <Container style={{height:'100%'}}>
                        <Row style={{height:'100%'}}>
-                       <Col lg={6} style={{backgroundColor:'#F3F3F3', height:'100%', display:'flex', justifyContent:'center', padding:'5', alignItems:'center', }}>
+                       <Col lg={6} md={5} sm={12} xs={12} style={{backgroundColor:'#F3F3F3', height:'100%', display:'flex', justifyContent:'center', alignItems:'center', }} >
                               <img src={rasm1} style={{width:'100%'}}/>
                             </Col>
-                            <Col lg={6} style={{backgroundColor:'#fff', height:'100%',  display:'flex', alignItems:'center'}}>
+                            <Col lg={6} md={7} sm={12} xs={12} style={{backgroundColor:'#fff', height:'100%',  display:'flex', alignItems:'center'}}>
                                 <div className={styles.tavsilot_text}>
                                 <h1>Qabul jarayoni bo'yicha tavsilotlar</h1>
                                 <p>
@@ -116,27 +116,27 @@ export default class Qabul extends Component {
                 </div>
                 
                 <div className={styles.body2}>
-                 <Container style={{height:'75%'}} >
+                 <Container style={{height:'75%'}} className={styles.col}>
                      <Row style={{height:'100%'}}>
-                         <Col lg={4} sm={12} md={6} >
-                             <Row style={{height:'100%', backgroundColor:'#fff', margin:'0px 10px 0px 0px',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'}}>
-                                 <Col lg={4} className={styles.top1}><img src={rasm2}/></Col>
-                                 <Col lg={8} className={styles.top2}>Ta'lim shakli</Col>
-                                 <Col lg={12} className={styles.bottom}>Bizning maktabda ta'lim shakli 3 tilda olib boriladi tojik, o'zbek va rus tilida.</Col>
+                         <Col lg={4} sm={12} md={6} xs={12} className={styles.row1}>
+                             <Row style={{height:'100%', backgroundColor:'#fff',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'}} className={styles.row}>
+                                 <Col lg={4} sm={4} xs={4} className={styles.top1}><img src={rasm2}/></Col>
+                                 <Col lg={8} sm={8} xs={8} className={styles.top2}>Ta'lim shakli</Col>
+                                 <Col lg={12} sm={12} xs={12} className={styles.bottom}>Bizning maktabda ta'lim shakli 3 tilda olib boriladi tojik, o'zbek va rus tilida.</Col>
                              </Row>
                          </Col>
-                         <Col lg={4} sm={12} md={6} >
-                             <Row style={{height:'100%', backgroundColor:'#fff',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'}}>
-                                 <Col lg={4} className={styles.top1}><img src={rasm3}/></Col>
-                                 <Col lg={8} className={styles.top2}>Bitiruvchilar</Col>
-                                 <Col lg={12} className={styles.bottom}>2020 - 2021 o'quv yilida maktabimizni 90 nafar o'quvchi bitirdi va ularning katta qismi oliy o'quv yurtlariga kirish imtihonlaridan katta natijalarni qo'lga kiritishdi</Col>
+                         <Col lg={4} sm={12} md={6} xs={12} className={styles.row1}>
+                             <Row style={{height:'100%', backgroundColor:'#fff',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'}} className={styles.row}>
+                                 <Col lg={4} sm={4} xs={4} className={styles.top1}><img src={rasm3}/></Col>
+                                 <Col lg={8} sm={8} xs={8} className={styles.top2}>Bitiruvchilar</Col>
+                                 <Col lg={12} sm={12} xs={12} className={styles.bottom}>2020 - 2021 o'quv yilida maktabimizni 90 nafar o'quvchi bitirdi va ularning katta qismi oliy o'quv yurtlariga kirish imtihonlaridan katta natijalarni qo'lga kiritishdi</Col>
                              </Row>
                          </Col>
-                         <Col lg={4} sm={12} md={6} >
-                             <Row style={{height:'100%', backgroundColor:'#fff', margin:'0px 0px 0px 10px',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'}}>
-                                 <Col lg={4} className={styles.top1}><img src={rasm4}/></Col>
-                                 <Col lg={8} className={styles.top2}>O'quvchilar</Col>
-                                 <Col lg={12} className={styles.bottom}>Maktabimizda 2020 - 2021 o'quv yili hisobiga ko'ra 1365 nafar o'quvchi mavjud</Col>
+                         <Col lg={4} sm={12} md={6} xs={12} className={styles.row1}>
+                             <Row style={{height:'100%', backgroundColor:'#fff',boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px'}} className={styles.row}>
+                                 <Col lg={4} sm={4} xs={4} className={styles.top1}><img src={rasm4}/></Col>
+                                 <Col lg={8} sm={8} xs={8} className={styles.top2}>O'quvchilar</Col>
+                                 <Col lg={12} sm={12} xs={12} className={styles.bottom}>Maktabimizda 2020 - 2021 o'quv yili hisobiga ko'ra 1365 nafar o'quvchi mavjud</Col>
                              </Row>
                          </Col>
                      </Row>
@@ -172,7 +172,7 @@ export default class Qabul extends Component {
                    <Container style={{height:'100%'}}>
                        <Row style={{height:'100%'}}>
                        
-                            <Col lg={6} style={{backgroundColor:'#fff', height:'100%', display:'flex', alignItems:'center'}}>
+                            <Col lg={6} md={7} sm={12} xs={12} style={{backgroundColor:'#fff', height:'100%', display:'flex', alignItems:'center'}}>
                                 <div className={styles.tavsilot_text}>
                                 <h1>Imtihonda ishtirok etish talablari</h1>
                                 <p>
@@ -180,7 +180,7 @@ export default class Qabul extends Component {
                                 </p>
                                 </div>
                             </Col>
-                            <Col lg={6} style={{backgroundColor:'#F3F3F3', height:'100%', display:'flex', justifyContent:'center', padding:'5', alignItems:'center', }}>
+                            <Col lg={6} md={5} sm={12} xs={12} style={{backgroundColor:'#F3F3F3', height:'100%', display:'flex', justifyContent:'center', alignItems:'center', }}>
                               <img src={rasm1} style={{width:'100%'}}/>
                             </Col>
                        </Row>
@@ -210,10 +210,10 @@ export default class Qabul extends Component {
                <Container>
                  <div className={styles.body5}>
                  <Row style={{height:'100%', width:'100%'}}>
-                       <Col lg={6} className={styles.hujjat_img}>
+                       <Col lg={6} md={6} xs={0} sm={0} className={styles.hujjat_img}>
                              
                             </Col>
-                            <Col lg={6} style={{ height:'100%',  display:'flex', alignItems:'center'}}>
+                            <Col lg={6} md={6} xs={12} sm={12} style={{ height:'100%',  display:'flex', alignItems:'center'}}>
                                 <div className={styles.hujjat_text}>
                                 <h1>Kerakli hujjatlar</h1>
                                 <p>Samarqand viloyati Samarqand tumani Qo'lbai poyon MFY 33- IDUM</p>

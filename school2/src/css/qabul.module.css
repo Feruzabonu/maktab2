@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
 }
+
 .body img{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -49,6 +50,9 @@
     display: flex;
     align-items: center;
     background-color: #A5C9CF;
+}
+.row{
+    margin: 0px 5px;
 }
 .top1{
     height: 50%;
@@ -216,4 +220,240 @@
     width: 100%;
     height: 100vh;
     background-color: white;
+}
+
+@media screen and (max-width:400px){
+    .body{
+        height: auto;
+    }
+    .body img{
+        margin: 20px 0px;
+    }
+    .tavsilot_text{
+        padding: 10px 10px;
+    }
+    .tavsilot_text h1{
+        margin: 20px 0px;
+    }
+    .body2{
+        height: 100vh;
+        padding: 20px 0px;
+    }
+    .row1{
+        height: auto;
+        margin: 5px 0px;
+    }
+    .row{
+        height: auto;
+        margin: 0px;
+        padding: 5px 0px;
+    }
+    .col{
+        height: 100% !important;
+    }
+    .jarayon{
+        width: 95%;
+    }
+    .body4{
+        height: auto;
+        background-position:center;
+        padding: 10px 0px;
+        margin-top: 20px;
+    }
+    .malumot{
+        display: block;
+        align-items: center;
+    }
+    .info{
+        display: flex;
+        justify-content: left;   
+        align-items: center;
+    }
+    .text h3{
+        font-weight: 600;  
+    }
+    .text p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .icon{
+      margin-right: 20px;
+    }
+    .icon img{
+        width: 40px;
+        height: 40px;
+    }
+    .hujjat_text{
+        padding: 0px 10px;
+    }
+    .hujjat_text h5{
+        font-size: 16px !important;
+    }
+    .hujjat_text img{
+        width: 30px;
+        height: 30px;
+    }
+    .hujjat_text p{
+        font-size: 18px;
+    }
+    .hujjat_list{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:767px){
+    .body{
+        height: auto;
+    }
+    .body img{
+        margin: 20px 0px;
+    }
+    .tavsilot_text{
+        padding: 10px 10px;
+    }
+    .tavsilot_text h1{
+        margin: 20px 0px;
+    }
+    .body2{
+        height: 100vh;
+        padding: 20px 0px;
+    }
+    .row1{
+        height: auto;
+        margin: 5px 0px;
+    }
+    .row{
+        height: auto;
+        margin: 0px;
+        padding: 5px 0px;
+    }
+    .col{
+        height: 100% !important;
+    }
+    .jarayon{
+        width: 95%;
+    }
+    .body4{
+        height: auto;
+        background-position:center;
+        padding: 10px 0px;
+        margin-top: 20px;
+    }
+    .malumot{
+        display: block;
+        align-items: center;
+    }
+    .info{
+        display: flex;
+        justify-content: left;   
+        align-items: center;
+    }
+    .text h3{
+        font-weight: 600;  
+    }
+    .text p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .icon{
+      margin-right: 20px;
+    }
+    .icon img{
+        width: 40px;
+        height: 40px;
+    }
+    .hujjat_text{
+        padding: 0px 10px;
+    }
+    .hujjat_text h5{
+        font-size: 18px !important;
+    }
+    .hujjat_text img{
+        width: 30px;
+        height: 30px;
+    }
+    .hujjat_text p{
+        font-size: 18px;
+    }
+    .hujjat_list{
+        height: auto;
+    }
+}
+@media screen and (max-width:992px){
+    .body{
+        height: auto;
+    }
+    .body img{
+     
+    }
+    .tavsilot_text{
+        padding: 10px 10px;
+    }
+    .tavsilot_text h1{
+        margin: 20px 0px;
+    }
+    .body2{
+        height: 60vh;
+        padding: 20px 0px;
+    }
+    .row1{
+        /* height: auto; */
+        margin: 5px 0px;
+    }
+    .row{
+        /* height: auto; */
+        margin: 0px;
+        padding: 5px 0px;
+    }
+    .col{
+        height: 100% !important;
+    }
+    .jarayon{
+        width: 95%;
+    }
+    .body4{
+        height: auto;
+        padding: 10px 0px;
+        margin-top: 20px;
+    }
+    .info{
+        display: flex;
+        justify-content: center;   
+        align-items: center;
+
+    }
+    .text h3{
+        font-weight: 600;  
+        font-size: 20px;
+    }
+    .text p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .icon{
+      margin-right: 20px;
+    }
+    .icon img{
+        width: 40px;
+        height: 40px;
+    }
+    .body5{
+        height: 60vh !important;
+    }
+    .hujjat_text{
+        padding: 0px 10px;
+    }
+    .hujjat_text h5{
+        font-size: 18px !important;
+    }
+    .hujjat_text img{
+        width: 30px;
+        height: 30px;
+    }
+    .hujjat_text p{
+        font-size: 18px;
+    }
+    .hujjat_list{
+        height: auto;
+    }
 }
