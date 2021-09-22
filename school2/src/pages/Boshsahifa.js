@@ -108,7 +108,7 @@ export default class Boshsahifa extends Component {
                          <Col lg={6} >
                              <h2>Maktabga video sayohat</h2>
                              <ReactPlayer
-                               data-aos="fade-up"
+                               
                                style={{marginTop:'70px',position:'inherit',zIndex:'111111111111'}}
                                width='100%'
                                height='400px'
