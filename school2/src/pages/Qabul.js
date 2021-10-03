@@ -167,7 +167,8 @@ export default class Qabul extends Component {
 
                 
                </div>
-
+               </Container>
+               
                <div className={styles.body}>
                    <Container style={{height:'100%'}}>
                        <Row style={{height:'100%'}}>
@@ -186,7 +187,7 @@ export default class Qabul extends Component {
                        </Row>
                    </Container>
                 </div>
-               </Container>
+               
                
                <div className={styles.body4}>
                  <Container style={{height:'100%'}}>
